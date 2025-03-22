@@ -28,7 +28,7 @@ body {
 		--input: 243 2% 50%;
 		--ring: 243 0% 4%;
 		--radius: 0.5rem;
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.dark {
 		--background: 0 0% 0%;
