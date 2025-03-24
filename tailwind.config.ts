@@ -56,6 +56,11 @@ const config: Config = {
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans]
+			},
+			fontSize: {
+				mobile: '12px', // default for mobile
+				tablet: '16px', // for tablets
+				desktop: '18px' // for desktops
 			}
 		}
 	}

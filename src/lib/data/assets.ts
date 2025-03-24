@@ -93,7 +93,8 @@ const Assets = {
 	Seaborn: asset('seaborn.svg'),
 	Sklearn: asset('sklearn.svg'),
 	PowerBI: asset('PowerBI.png'),
-	Mltp: asset('Matplotlib.svg')
+	Mltp: asset('Matplotlib.svg'),
+	ALTF: asset('altreryxf.png')
 };
 
 export default Assets;
