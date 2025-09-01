@@ -9,13 +9,16 @@
 </script>
 
 <ModeWatcher />
-<div class="flex h-screen w-screen flex-col overflow-x-hidden">
+
+<!-- Use min-h, not h-screen; avoid w-screen -->
+<div class="flex min-h-[100svh] w-full flex-col overflow-x-hidden">
 	<NavBar />
 	<!-- match the mobile/desktop navbar heights -->
 	<div class="mt-14 flex flex-1 flex-col sm:mt-[70px]">
 		{@render children()}
 	</div>
 </div>
+
 <!--
 <div class="flex h-screen w-screen flex-col overflow-x-hidden">
 	<NavBar />
