@@ -46,7 +46,7 @@
 							<Tooltip>
 								<TooltipTrigger>
 									<Button variant="outline" size="icon">
-										<Icon icon={item.icon} className="text-lg" />
+										<Icon icon={item.icon as `i-carbon-${string}`} className="text-lg" />
 									</Button>
 								</TooltipTrigger>
 								<TooltipContent side="bottom">{item.label}</TooltipContent>

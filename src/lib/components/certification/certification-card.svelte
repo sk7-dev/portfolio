@@ -25,11 +25,8 @@
 	}
 </script>
 
-<FancyCard
-	color={certification.color}
-	class="flex h-full flex-col"
-	href={href(`/certification/${certification.slug}`)}
->
+<FancyCard color={certification.color} class="flex h-full flex-col">
+	<!-- href={href(`/certification/${certification.slug}`)} -->
 	<CardHeader class="flex flex-row items-center gap-6 p-4">
 		<div class="h-24 w-24 overflow-hidden">
 			<img
@@ -68,11 +65,7 @@
 					{#each certification.skills as skill (skill.slug)}
 						<SkillBadge {skill} />
 					{/each}
-				{:else}
-					<Badge variant="outline" class="text-xs">Cloud Computing</Badge>
-					<Badge variant="outline" class="text-xs">AWS</Badge>
-					<Badge variant="outline" class="text-xs">Security</Badge>
-				{/if}
+				{:else}{/if}
 			</div>
 		</div>
 	</CardContent>

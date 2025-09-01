@@ -21,8 +21,8 @@
 	--code-class-name: #e06c75;
 
 	font-family: 'Space Mono', monospace;
-	font-size: 14px;
-
+	font-size: clamp(14px, 1rem + 0.5vw, 19px);
+	line-height: 1.7;
 	overflow-y: auto !important;
 }
 .markdown-container code[class*='language-'],

@@ -15,7 +15,7 @@
 </script>
 
 <div class="mb-4">
-	<h3 class="mb-2 text-sm font-medium">Filter by Type</h3>
+	<h3 class="mb-2 text-sm font-medium">FILTER BY TYPE</h3>
 	<div class="flex flex-row flex-wrap gap-2">
 		{#each types as type (type)}
 			<Toggle

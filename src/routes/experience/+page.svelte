@@ -11,8 +11,8 @@
 		ExperienceData.items.filter(
 			(it) =>
 				it.name.toLowerCase().includes(search.toLowerCase()) ||
-				it.company.toLowerCase().includes(search.toLowerCase()) ||
-				it.description.toLowerCase().includes(search)
+				it.company.toLowerCase().includes(search.toLowerCase())
+			//it.description.toLowerCase().includes(search)
 		)
 	);
 

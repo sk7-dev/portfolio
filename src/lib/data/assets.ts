@@ -94,7 +94,8 @@ const Assets = {
 	Sklearn: asset('sklearn.svg'),
 	PowerBI: asset('PowerBI.png'),
 	Mltp: asset('Matplotlib.svg'),
-	ALTF: asset('altreryxf.png')
+	ALTF: asset('altreryxf.png'),
+	tiktok: asset('tiktok.jpg')
 };
 
 export default Assets;

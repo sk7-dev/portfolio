@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { Card, CardFooter } from '$lib/components/ui/card';
-
 	import {
 		Dialog,
 		DialogClose,
@@ -20,20 +19,19 @@
 	<DialogTrigger>
 		<Card
 			class="flex aspect-square flex-col justify-end bg-cover bg-center bg-no-repeat"
-			style={`background-image:url("${item.src}")`}
+			style={`background-image: url("${item.src}")`}
 		>
 			<Separator />
-			<CardFooter class="rounded-b-md bg-[#00000099] pt-4 text-white backdrop-blur-sm"
-				>{item.label}</CardFooter
-			>
+			<CardFooter class="rounded-b-md bg-[#00000099] pt-4 text-white backdrop-blur-sm">
+				{item.label}
+			</CardFooter>
 		</Card>
 	</DialogTrigger>
-	<DialogContent class="flex min-h-[70%] min-w-[70%] flex-col">
+	<DialogContent class="flex max-h-[90vh] max-w-[90vw] flex-col items-center justify-center p-4">
 		<DialogTitle>{item.label}</DialogTitle>
-		<div
-			class="flex-1 bg-cover bg-center bg-no-repeat"
-			style={`background-image: url("${item.src}")`}
-		></div>
+		<div class="flex w-full flex-1 items-center justify-center overflow-auto">
+			<img src={item.src} alt={item.label} class="max-h-[70vh] max-w-[70vw] object-contain" />
+		</div>
 		<DialogFooter>
 			<DialogClose>
 				<Button>Close</Button>

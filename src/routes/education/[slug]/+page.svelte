@@ -49,11 +49,11 @@
 			</div>
 		</FancyBanner>
 		<Separator />
-		{#if data.item.description.trim()}
+		<!--		{#if data.item.description.trim()}
 			<Markdown content={data.item.description} />
 		{:else}
 			<EmptyMarkdown />
-		{/if}
+		{/if}-->
 		<Separator />
 		<div class="flex flex-col gap-2 px-4 pt-4">
 			{#if data.item.screenshots && data.item.screenshots.length > 0}

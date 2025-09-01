@@ -25,7 +25,8 @@
 	let location = `${it.organization}, ${it.location}`;
 </script>
 
-<FancyCard href={href(`/education/${it.slug}`)}>
+<FancyCard
+	><!--href={href(`/education/${it.slug}`)}-->
 	<CardContent class="flex flex-col gap-8 sm:flex-row">
 		<Avatar>
 			<AvatarFallback>

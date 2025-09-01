@@ -61,8 +61,13 @@
 			</div>
 		</FancyBanner>
 		<Separator />
-		{#if data.item.description.trim()}
+		<!--		{#if data.item.description.trim()}
 			<Markdown content={data.item.description} />
+		{:else}
+			<EmptyMarkdown />
+		{/if}-->
+		{#if (data.item.description ?? '').trim().length > 0}
+			<Markdown content={data.item.description ?? ''} />
 		{:else}
 			<EmptyMarkdown />
 		{/if}

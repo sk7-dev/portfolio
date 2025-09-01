@@ -6,7 +6,7 @@ const title = 'Education';
 const items: Array<Education> = [
 	{
 		degree: 'Master of Science in Information Systems',
-		description: '',
+		description: 'Masters',
 		location: 'USA',
 		logo: Assets.CSULB,
 		name: '',
@@ -14,11 +14,11 @@ const items: Array<Education> = [
 		period: { from: new Date(2024, 7, 15) },
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
-		subjects: ['Data Science', 'Machine Learning', 'Statistics', 'Data Analysis']
+		subjects: ['Data Science', 'Machine Learning', 'Statistics', 'Data Analysis', 'Deep Learning']
 	},
 	{
 		degree: 'Bachelor of Engineering in Computer Science and Engineering',
-		description: '',
+		description: 'Bachelors',
 		location: 'India',
 		logo: Assets.REC,
 		name: '',

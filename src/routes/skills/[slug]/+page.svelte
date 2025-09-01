@@ -63,11 +63,11 @@
 			<H1>{data.item.name}</H1>
 		</FancyBanner>
 		<Separator />
-		{#if data.item.description.trim()}
+		<!--		{#if data.item.description.trim()}
 			<Markdown content={data.item.description} />
 		{:else}
 			<EmptyMarkdown />
-		{/if}
+		{/if}-->
 		<Separator />
 		{#if related.length !== 0}
 			<div class="flex flex-row flex-wrap items-center gap-2 px-4 py-4">

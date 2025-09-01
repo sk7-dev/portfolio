@@ -6,10 +6,8 @@ const items: Array<Certification> = [
 	{
 		slug: 'fabric',
 		color: '#ff3e00',
-		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+		description: '',
+		shortDescription: '',
 		links: [
 			{
 				to: 'https://learn.microsoft.com/en-us/users/shivkartheejanardhanan-8686/credentials/a8918bd71a2f35a3',
@@ -47,12 +45,7 @@ const items: Array<Certification> = [
 			'This project implements a transformer-based language model with iterative improvements to reduce overfitting, optimize training, and improve generalization. By leveraging advanced deep learning techniques, the model achieves substantial gains in prediction accuracy and stability across datasets.',
 		shortDescription:
 			'This project implements a transformer-based language model with iterative improvements to reduce overfitting, optimize training, and improve generalization. By leveraging advanced deep learning techniques, the model achieves substantial gains in prediction accuracy and stability across datasets.',
-		links: [
-			{ to: 'https://github.com/sk7-dev/GPT_Based_Language_Model', label: 'GitHub' }
-			//{ to: 'https://github.com/RiadhAdrani/', label: 'Reporsitory' },
-			//{ to: 'https://svelte.dev/', label: 'Svelte' },
-			//{ to: 'https://www.shadcn-svelte.com/', label: 'Shadcn Svelte' }
-		],
+		links: [{ to: 'https://github.com/sk7-dev/GPT_Based_Language_Model', label: 'GitHub' }],
 		logo: Assets.ALTM,
 		name: 'Alteryx: Designer Core General Knowledge',
 		period: {
@@ -68,12 +61,7 @@ const items: Array<Certification> = [
 			'This project implements a transformer-based language model with iterative improvements to reduce overfitting, optimize training, and improve generalization. By leveraging advanced deep learning techniques, the model achieves substantial gains in prediction accuracy and stability across datasets.',
 		shortDescription:
 			'This project implements a transformer-based language model with iterative improvements to reduce overfitting, optimize training, and improve generalization. By leveraging advanced deep learning techniques, the model achieves substantial gains in prediction accuracy and stability across datasets.',
-		links: [
-			{ to: 'https://github.com/sk7-dev/GPT_Based_Language_Model', label: 'GitHub' }
-			//{ to: 'https://github.com/RiadhAdrani/', label: 'Reporsitory' },
-			//{ to: 'https://svelte.dev/', label: 'Svelte' },
-			//{ to: 'https://www.shadcn-svelte.com/', label: 'Shadcn Svelte' }
-		],
+		links: [{ to: 'https://github.com/sk7-dev/GPT_Based_Language_Model', label: 'GitHub' }],
 		logo: Assets.ALTF,
 		name: 'Alteryx: Foundation',
 		period: {
