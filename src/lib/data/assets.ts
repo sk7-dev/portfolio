@@ -95,7 +95,10 @@ const Assets = {
 	PowerBI: asset('PowerBI.png'),
 	Mltp: asset('Matplotlib.svg'),
 	ALTF: asset('altreryxf.png'),
-	tiktok: asset('tiktok.jpg')
+	tiktok: asset('tiktok.jpg'),
+	ais: asset('ais.jpeg'),
+	dslc: asset('dslc.jpeg'),
+	dacert: asset('dacert.png')
 };
 
 export default Assets;

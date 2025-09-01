@@ -69,14 +69,24 @@ export interface Project<S extends string = string> extends Item<S> {
 }
 
 export interface Certification<S extends string = string> extends Item<S> {
-	links: Array<Link>;
+	links?: Array<Link>;
 	color: Color;
-	period: {
+	period?: {
 		from: Date;
 		to?: Date;
 	};
 	type: string;
 	skills: Array<Skill<S>>;
+}
+
+export type HighlightKind = 'certification' | 'volunteering' | 'extracurricular';
+
+/**
+ * Generic dated item with links/skills that we can render in a card.
+ * Matches the shape your CertificationCard already expects.
+ */
+export interface Highlight<S extends string = string> extends Omit<Certification<S>, never> {
+	kind: HighlightKind;
 }
 
 export interface Experience<S extends string = string> extends Project<S> {
