@@ -32,7 +32,11 @@ const hero: {
 			icon: 'i-carbon-analytics'
 		},
 		{ label: 'Email', href: 'mailto:karthee.shiv@gmail.com', icon: 'i-carbon-email' },
-		{ label: 'Résumé', href: '/pdf/Shiv_Karthee_Janardhanan_Resume.pdf', isText: true }
+		{
+			label: 'Résumé',
+			href: 'https://drive.google.com/file/d/1Afct9VILvS9WjCzcxlP2FwfTQgVVuLJl/view?usp=sharing',
+			isText: true
+		}
 	]
 };
 
