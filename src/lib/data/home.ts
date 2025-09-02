@@ -40,7 +40,7 @@ const hero: {
 	]
 };
 
-const carousel: Array<Skill> = getSkills();
+const carousel: Array<Skill> = getSkills().slice(0, 20);
 
 const HomeData = {
 	title,

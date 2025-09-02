@@ -118,14 +118,7 @@ const items = [
 		name: 'Microsoft Fabric',
 		category: 'data-stack'
 	}),
-	defineSkill({
-		slug: 'pandas',
-		color: 'cyan',
-		description: 'Pandas',
-		logo: Assets.Panda,
-		name: 'Pandas',
-		category: 'library'
-	}),
+
 	defineSkill({
 		slug: 'azure',
 		color: 'pink',
@@ -133,22 +126,6 @@ const items = [
 		logo: Assets.Azure,
 		name: 'Azure',
 		category: 'cloud'
-	}),
-	defineSkill({
-		slug: 'numpy',
-		color: 'cyan',
-		description: 'Numpy',
-		logo: Assets.Numpy,
-		name: 'Numpy',
-		category: 'library'
-	}),
-	defineSkill({
-		slug: 'Matplotlib',
-		color: 'blue',
-		description: 'Matplotlib',
-		logo: Assets.Mltp,
-		name: 'Matplotlib',
-		category: 'viz-tool'
 	}),
 	defineSkill({
 		slug: 'PowerBI',
@@ -159,19 +136,59 @@ const items = [
 		category: 'viz-tool'
 	}),
 	defineSkill({
-		slug: 'seaborn',
-		color: 'cyan',
-		description: 'Seaborn',
-		logo: Assets.Seaborn,
-		name: 'Seaborn',
-		category: 'viz-tool'
-	}),
-	defineSkill({
 		slug: 'excel',
 		color: 'green',
 		description: 'Excel',
 		logo: Assets.Excel,
 		name: 'Excel',
+		category: 'data-stack'
+	}),
+	defineSkill({
+		slug: 'aws',
+		color: 'pink',
+		description: 'AWS',
+		logo: Assets.AWS,
+		name: 'AWS',
+		category: 'cloud'
+	}),
+	defineSkill({
+		slug: 'db',
+		color: 'pink',
+		description: 'Databricks',
+		logo: Assets.db,
+		name: 'Databricks',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'eda',
+		color: 'pink',
+		description: 'Exploratory Data Analysis',
+		logo: Assets.eda,
+		name: 'EDA',
+		category: 'Activity'
+	}),
+	defineSkill({
+		slug: 'alteryx',
+		color: 'cyan',
+		description: 'Alteryx',
+		logo: Assets.Alteryx,
+		name: 'Alteryx',
+		category: 'data-stack'
+	}),
+	defineSkill({
+		slug: 'cpp',
+		color: 'cyan',
+		description: 'C++',
+		logo: Assets.Cpp,
+		name: 'C++',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'PostgreSQL',
+		color: 'pink',
+		description: 'PostgreSQL',
+		logo: Assets.PostgreSQL,
+		name: 'PostgreSQL',
 		category: 'data-stack'
 	}),
 	defineSkill({
@@ -191,35 +208,44 @@ const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'alteryx',
+		slug: 'pandas',
 		color: 'cyan',
-		description: 'Alteryx',
-		logo: Assets.Alteryx,
-		name: 'Alteryx',
-		category: 'data-stack'
+		description: 'Pandas',
+		logo: Assets.Panda,
+		name: 'Pandas',
+		category: 'library'
 	}),
 	defineSkill({
-		slug: 'cpp',
+		slug: 'numpy',
 		color: 'cyan',
-		description: 'C++',
-		logo: Assets.Cpp,
-		name: 'C++',
-		category: 'pro-lang'
+		description: 'Numpy',
+		logo: Assets.Numpy,
+		name: 'Numpy',
+		category: 'library'
 	}),
 	defineSkill({
-		slug: 'aws',
-		color: 'pink',
-		description: 'AWS',
-		logo: Assets.AWS,
-		name: 'AWS',
-		category: 'cloud'
+		slug: 'Matplotlib',
+		color: 'blue',
+		description: 'Matplotlib',
+		logo: Assets.Mltp,
+		name: 'Matplotlib',
+		category: 'viz-tool'
+	}),
+
+	defineSkill({
+		slug: 'seaborn',
+		color: 'cyan',
+		description: 'Seaborn',
+		logo: Assets.Seaborn,
+		name: 'Seaborn',
+		category: 'viz-tool'
 	}),
 	defineSkill({
-		slug: 'PostgreSQL',
+		slug: 'synapse',
 		color: 'pink',
-		description: 'PostgreSQL',
-		logo: Assets.PostgreSQL,
-		name: 'PostgreSQL',
+		description: 'Synapse Analytics',
+		logo: Assets.Azure,
+		name: 'Synapse',
 		category: 'data-stack'
 	}),
 	defineSkill({
@@ -254,14 +280,7 @@ const items = [
 		name: 'NodeJs',
 		category: 'web-dev'
 	}),
-	defineSkill({
-		slug: 'synapse',
-		color: 'pink',
-		description: 'Synapse Analytics',
-		logo: Assets.Azure,
-		name: 'Synapse',
-		category: 'data-stack'
-	}),
+
 	defineSkill({
 		slug: 'nlp',
 		color: 'pink',
@@ -278,14 +297,7 @@ const items = [
 		name: 'XGBoost',
 		category: 'library'
 	}),
-	defineSkill({
-		slug: 'db',
-		color: 'pink',
-		description: 'Databricks',
-		logo: Assets.Azure,
-		name: 'Databricks',
-		category: 'library'
-	}),
+
 	defineSkill({
 		slug: 'webscraping',
 		color: 'pink',
@@ -294,14 +306,7 @@ const items = [
 		name: 'Web Scraping',
 		category: 'Activity'
 	}),
-	defineSkill({
-		slug: 'eda',
-		color: 'pink',
-		description: 'Exploratory Data Analysis',
-		logo: Assets.Python,
-		name: 'EDA',
-		category: 'Activity'
-	}),
+
 	defineSkill({
 		slug: 'transformer',
 		color: 'pink',

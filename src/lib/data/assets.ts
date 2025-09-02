@@ -98,7 +98,9 @@ const Assets = {
 	tiktok: asset('tiktok.jpg'),
 	ais: asset('ais.jpeg'),
 	dslc: asset('dslc.jpeg'),
-	dacert: asset('dacert.png')
+	dacert: asset('dacert.png'),
+	db: asset('dbs.png'),
+	eda: asset('eda.png')
 };
 
 export default Assets;
