@@ -100,7 +100,8 @@ const Assets = {
 	dslc: asset('dslc.jpeg'),
 	dacert: asset('dacert.png'),
 	db: asset('dbs.png'),
-	eda: asset('eda.png')
+	eda: asset('eda.png'),
+	syn: asset('syn.webp')
 };
 
 export default Assets;
