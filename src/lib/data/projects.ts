@@ -19,15 +19,9 @@ const items: Array<Project> = [
 		logo: Assets.tiktok,
 		name: 'TikTok Claim Classifier',
 		period: {
-			from: new Date(2024, 9, 10),
-			to: new Date(2024, 11, 12)
+			from: new Date(2024, 9, 10)
 		},
-		skills: getSkills(
-			'Machine Learning',
-			'XGBoost',
-			'Text Classification',
-			'Natural Language Processing'
-		),
+		skills: getSkills('py', 'pandas', 'sklearn', 'nlp', 'xgb'),
 		type: 'Data Science',
 		screenshots: [
 			{
@@ -46,9 +40,9 @@ const items: Array<Project> = [
 		logo: Assets.Azure,
 		name: 'Sales Data Pipeline',
 		period: {
-			from: new Date()
+			from: new Date(2025, 3, 10)
 		},
-		skills: getSkills('Azrue DataFactory', 'ts', 'tailwind', 'sass'),
+		skills: getSkills('azure', 'PowerBI', 'synapse', 'db'),
 		type: 'Data Engineering',
 		screenshots: [
 			{
@@ -82,9 +76,9 @@ const items: Array<Project> = [
 		logo: Assets.Tableau,
 		name: 'El-Clasico Analysis',
 		period: {
-			from: new Date()
+			from: new Date(2025, 1, 10)
 		},
-		skills: getSkills('Python', 'Tableau', 'Excel'),
+		skills: getSkills('py', 'tableau', 'excel', 'webscraping', 'eda'),
 		type: 'Data Visualization',
 		screenshots: [
 			{
@@ -120,10 +114,9 @@ const items: Array<Project> = [
 		logo: Assets.LLMi,
 		name: 'MagiQuill',
 		period: {
-			from: new Date(2024, 9, 10),
-			to: new Date(2024, 11, 12)
+			from: new Date(2024, 9, 10)
 		},
-		skills: getSkills('Transformer', 'AndamW', 'LLM'),
+		skills: getSkills('transformer', 'nlp', 'adamw', 'llm'),
 		type: 'Deep Learning'
 	},
 	{
@@ -136,7 +129,7 @@ const items: Array<Project> = [
 		links: [
 			{
 				to: 'https://github.com/sk7-dev/Data_Analysis_and_Prediction/tree/main/SPSS/Crypto_Currency_Prediction',
-				label: 'Github'
+				label: 'GitHub'
 			},
 			{
 				to: 'https://drive.google.com/file/d/1FcKQFvsp_B038Jn2jly3eES0t3h9ZAlT/preview',
@@ -146,10 +139,9 @@ const items: Array<Project> = [
 		logo: Assets.DAn,
 		name: 'Analyzing Factors Influencing Cryptocurrency Investment',
 		period: {
-			from: new Date(2024, 9, 10),
-			to: new Date(2024, 11, 12)
+			from: new Date(2024, 9, 10)
 		},
-		skills: getSkills('SPSS', 'Regression', 'KNN'),
+		skills: getSkills('spss', 'regression', 'knn', 'Datawrangling'),
 		type: 'Data Analysis',
 		screenshots: [
 			{

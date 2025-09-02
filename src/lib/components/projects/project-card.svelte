@@ -27,9 +27,22 @@
 	import Muted from '../ui/typography/muted.svelte';
 
 	const { project }: { project: Project } = $props();
+	const linkIcons: Record<string, `i-carbon-${string}`> = {
+		GitHub: 'i-carbon-logo-github',
+		'Tableau Public': 'i-carbon-chart-line',
+		Presentation: 'i-carbon-document'
+	};
 
+	const getIcon = (label: string): `i-carbon-${string}` => linkIcons[label] || 'i-carbon-link';
+
+	//let from = $derived(getMonthAndYear(project.period.from));
+	//let to = $derived(getMonthAndYear(project.period.to));
+	//let exactDuration = $derived(computeExactDuration(project.period.from, project.period.to));
 	let from = $derived(getMonthAndYear(project.period.from));
-	let to = $derived(getMonthAndYear(project.period.to));
+	// Only compute `to` if it actually exists; otherwise leave `undefined`
+	let hasEnd = $derived(!!project.period.to);
+	let to = $derived(hasEnd ? getMonthAndYear(project.period.to as Date) : undefined);
+
 	let exactDuration = $derived(computeExactDuration(project.period.from, project.period.to));
 </script>
 
@@ -56,6 +69,7 @@
 					<TooltipContent>{project.name}</TooltipContent>
 				</Tooltip>
 			</CardTitle>
+
 			{#if project.links.length > 2}
 				<ButtonLink link={project.links[0]} />
 				<DropdownMenu>
@@ -76,13 +90,24 @@
 				</DropdownMenu>
 			{:else}
 				{#each project.links as link (link.to)}
-					<ButtonLink {link} />
+					<a
+						href={link.to}
+						target="_blank"
+						class="inline-flex items-center gap-2 rounded-md border border-gray-500 px-3 py-1 hover:bg-gray-700"
+					>
+						<Icon icon={getIcon(link.label)} />
+						<!--<span>{link.label}</span>-->
+					</a>
 				{/each}
+				<!--
+				{#each project.links as link (link.to)}
+					<ButtonLink {link} />
+				{/each} -->
 			{/if}
 		</div>
 		<Separator />
 	</CardHeader>
-	<CardContent class="flex flex-1 flex-col gap-4">
+	<!--	<CardContent class="flex flex-1 flex-col gap-4">
 		<Muted className="flex flex-row gap-2 items-center">
 			<Icon icon="i-carbon-assembly-cluster" />
 			<Muted>{project.type}</Muted>
@@ -99,9 +124,61 @@
 			<Badge variant="outline">{to}</Badge>
 		</div>
 		<Separator />
+		<!--
 		<div class="flex flex-row flex-wrap items-center gap-2">
 			{#each project.skills as skill (skill.slug)}
 				<SkillBadge {skill} />
+			{/each}
+		</div>--
+		<div class="flex flex-row flex-wrap items-center gap-2">
+			{#each project.skills as skill (skill.slug)}
+				<Badge variant="secondary" class="flex items-center gap-1">
+					<!--	<img
+						src={$mode === 'dark' ? skill.logo.dark : skill.logo.light}
+						alt={skill.name}
+						class="h-4 w-4 rounded-sm"
+					/>--
+					{skill.name}
+				</Badge>
+			{/each}
+		</div>
+	</CardContent>-->
+	<CardContent class="flex flex-1 flex-col gap-4">
+		<Muted className="flex flex-row gap-2 items-center">
+			<Icon icon="i-carbon-assembly-cluster" />
+			<Muted>{project.type}</Muted>
+		</Muted>
+		<!--
+		<Muted className="flex flex-row gap-2 items-center">
+			<Icon icon="i-carbon-time" />
+			<Muted>{exactDuration}</Muted>
+		</Muted>-->
+
+		<Muted className="py-4 md:py-2 md:min-h-[100px] md:max-h-[100px]">
+			{ellipsify(project.shortDescription, 100)}
+		</Muted>
+
+		<!-- Dates row: show only start; show end only if provided -->
+		<div class="flex w-full flex-row items-center gap-2">
+			<Badge variant="outline">{from}</Badge>
+			{#if hasEnd}
+				<span class="text-muted-foreground">–</span>
+				<Badge variant="outline">{to}</Badge>
+			{/if}
+		</div>
+
+		<Separator />
+
+		<div class="flex flex-row flex-wrap items-center gap-2">
+			{#each project.skills as skill (skill.slug)}
+				<Badge variant="secondary" class="flex items-center gap-1">
+					<!--	<img
+						src={$mode === 'dark' ? skill.logo.dark : skill.logo.light}
+						alt={skill.name}
+						class="h-4 w-4 rounded-sm"
+					/>-->
+					{skill.name}
+				</Badge>
 			{/each}
 		</div>
 	</CardContent>

@@ -22,7 +22,10 @@ const categories = [
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
 	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
-	defineSkillCategory({ name: 'Cloud', slug: 'cloud' })
+	defineSkillCategory({ name: 'Cloud', slug: 'cloud' }),
+	defineSkillCategory({ name: 'Activity', slug: 'activity' }),
+	defineSkillCategory({ name: 'Tools', slug: 'tools' }),
+	defineSkillCategory({ name: 'Techniques', slug: 'techniques' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -250,6 +253,110 @@ const items = [
 		logo: Assets.NodeJs,
 		name: 'NodeJs',
 		category: 'web-dev'
+	}),
+	defineSkill({
+		slug: 'synapse',
+		color: 'pink',
+		description: 'Synapse Analytics',
+		logo: Assets.Azure,
+		name: 'Synapse',
+		category: 'data-stack'
+	}),
+	defineSkill({
+		slug: 'nlp',
+		color: 'pink',
+		description: 'Natural Language Processing',
+		logo: Assets.Python,
+		name: 'NLP',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'xgb',
+		color: 'pink',
+		description: 'XGBoost',
+		logo: Assets.Python,
+		name: 'XGBoost',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'db',
+		color: 'pink',
+		description: 'Databricks',
+		logo: Assets.Azure,
+		name: 'Databricks',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'webscraping',
+		color: 'pink',
+		description: 'Web Scraping',
+		logo: Assets.Python,
+		name: 'Web Scraping',
+		category: 'Activity'
+	}),
+	defineSkill({
+		slug: 'eda',
+		color: 'pink',
+		description: 'Exploratory Data Analysis',
+		logo: Assets.Python,
+		name: 'EDA',
+		category: 'Activity'
+	}),
+	defineSkill({
+		slug: 'transformer',
+		color: 'pink',
+		description: 'Transformers',
+		logo: Assets.Python,
+		name: 'Transformers',
+		category: 'Programming Language'
+	}),
+	defineSkill({
+		slug: 'adamw',
+		color: 'pink',
+		description: 'AdamW Optimizer',
+		logo: Assets.Python,
+		name: 'AdamW',
+		category: 'Programming Language'
+	}),
+	defineSkill({
+		slug: 'llm',
+		color: 'pink',
+		description: 'Large Language Models',
+		logo: Assets.Python,
+		name: 'LLM',
+		category: 'Programming Language'
+	}),
+	defineSkill({
+		slug: 'spss',
+		color: 'pink',
+		description: 'SPSS',
+		logo: Assets.Python,
+		name: 'SPSS',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'regression',
+		color: 'pink',
+		description: 'Regression',
+		logo: Assets.Python,
+		name: 'Regression',
+		category: 'Techniques'
+	}),
+	defineSkill({
+		slug: 'knn',
+		color: 'pink',
+		description: 'K-Nearest Neighbors',
+		logo: Assets.Python,
+		name: 'KNN',
+		category: 'Techniques'
+	}),
+	defineSkill({
+		slug: 'Datawrangling',
+		color: 'pink',
+		description: 'Data Wrangling',
+		logo: Assets.Python,
+		name: 'Data Wrangling',
+		category: 'Techniques'
 	})
 ] as const;
 
