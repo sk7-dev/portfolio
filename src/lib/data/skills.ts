@@ -241,14 +241,6 @@ const items = [
 		category: 'viz-tool'
 	}),
 	defineSkill({
-		slug: 'synapse',
-		color: 'pink',
-		description: 'Synapse Analytics',
-		logo: Assets.syn,
-		name: 'Synapse',
-		category: 'data-stack'
-	}),
-	defineSkill({
 		slug: 'HTML',
 		color: 'pink',
 		description: 'HTML',
@@ -279,6 +271,14 @@ const items = [
 		logo: Assets.NodeJs,
 		name: 'NodeJs',
 		category: 'web-dev'
+	}),
+	defineSkill({
+		slug: 'synapse',
+		color: 'pink',
+		description: 'Synapse Analytics',
+		logo: Assets.syn,
+		name: 'Synapse',
+		category: 'data-stack'
 	}),
 
 	defineSkill({
