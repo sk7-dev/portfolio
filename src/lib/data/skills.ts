@@ -244,7 +244,7 @@ const items = [
 		slug: 'synapse',
 		color: 'pink',
 		description: 'Synapse Analytics',
-		logo: Assets.Azure,
+		logo: Assets.syn,
 		name: 'Synapse',
 		category: 'data-stack'
 	}),
