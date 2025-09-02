@@ -9,8 +9,8 @@ const primaryItems = [
 ] as const;
 
 const secondaryItems = [
-	{ title: 'Education', icon: 'i-carbon-education', href: '/education' },
-	{ title: 'Skills', icon: 'i-carbon-assembly-cluster', href: '/skills' }
+	{ title: 'Education', icon: 'i-carbon-education', href: '/education' }
+	//{ title: 'Skills', icon: 'i-carbon-assembly-cluster', href: '/skills' }
 	//{ title: 'Certifications', icon: 'i-carbon-certificate', href: '/certification' }
 ] as const;
 
