@@ -2,7 +2,68 @@ import Assets from './assets';
 import { getSkills } from './skills';
 import type { Project } from './types';
 
+//'<br><br> <center><b>Highlights</b></center><br><ul><li><b></b></li><br> <li><b></b></li><br> <li><b></b></li></ul>',
 const items: Array<Project> = [
+	{
+		slug: 'multimodal',
+		color: '#ff3e00',
+		description:
+			'This project evaluates structured EHR data, chest X-ray images, and multimodal fusion approaches for automated pneumonia detection using the Symile-MIMIC dataset. Multiple models were compared across tabular, image-only, and multimodal settings with a clinical focus on recall. While unimodal models captured partial signal, a two-stage multimodal architecture that fused an XGBoost risk score with CNN image features achieved the best balance of sensitivity and discrimination, demonstrating that carefully designed multimodal learning can improve clinically relevant performance over naïve end-to-end approaches<br><br> <center><b>Highlights</b></center><br><ul><li><b></b>Built and compared structured (XGBoost, MLP), image-only (CNN, ResNet-18), and multimodal models on a unified clinical dataset.</li><br> <li><b></b>Achieved high pneumonia sensitivity (~0.74 recall) using a two-stage CNN + XGBoost fusion model, outperforming unimodal baselines.</li><br> <li><b></b>Showed that explicit multimodal fusion outperforms simple feature concatenation, providing practical design insights for healthcare ML systems</li></ul>',
+		shortDescription:
+			'Evaluating Multimodal AI Models for Automated Pneumonia Diagnosis by combining clinical data and chest X-rays',
+		links: [
+			{
+				to: 'https://github.com/sk7-dev/Multimodal_Analysis_of_Medical_Data',
+				label: 'GitHub'
+			},
+			{
+				to: 'https://drive.google.com/file/d/1mgV-gGQNWp_FMiE6JjessOmmTmXEbD3O/view?usp=sharing',
+				label: 'Presentation'
+			}
+		],
+		logo: Assets.DAn,
+		name: 'Multimodal Data Analysis for Pneumonia Detection',
+		period: {
+			from: new Date(2025, 8, 10)
+		},
+		skills: getSkills('py', 'Deep Learning', 'Multimodal Learning', 'cnn', 'xgb', 'mlp'),
+		type: 'Data Science'
+	},
+	{
+		slug: 'ais-microsoft',
+		color: '#ff3e00',
+		description:
+			'<br><br>Led the data engineering efforts for a 4-month, cross-functional student project in collaboration with Microsoft to build a fully automated, end-to-end analytics platform in Microsoft Fabric to simplify student housing decisions. Designed and implemented a production-style ETL pipeline using a medallion architecture and presented the solution at the Microsoft Fabric User Group.<center><b>Highlights</b></center><br><ul><li><b></b>Data Engineering Lead, owning ETL architecture, incremental API ingestion, and pipeline automation in Microsoft Fabric</li><br> <li><b></b>Built a fully automated medallion architecture with schema enforcement, de-duplication, and data quality controls</li><br> <li><b></b>Presented the solution at the Microsoft Fabric User Group, demonstrating a real-world, end-to-end analytics prototype with industry tools</li></ul>',
+		shortDescription:
+			'Microsoft Fabric data solution enabling insights-driven student housing decisions.',
+		links: [
+			{
+				to: 'https://github.com/sk7-dev/Student_Housing_Project_AIS-x-Microsoft',
+				label: 'GitHub'
+			},
+			{
+				to: 'https://drive.google.com/file/d/1mgV-gGQNWp_FMiE6JjessOmmTmXEbD3O/view?usp=sharing',
+				label: 'Presentation'
+			}
+		],
+		logo: Assets.Fabric,
+		name: 'Student Housing Analytics Platform',
+		period: {
+			from: new Date(2025, 6, 10)
+		},
+		skills: getSkills('PySpark', 'fabric', 'etl'),
+		type: 'Data Engineering',
+		screenshots: [
+			{
+				label: 'Pipeline',
+				src: 'https://res.cloudinary.com/dhohvytuw/image/upload/v1767043057/Dataflow_idiser.jpg'
+			},
+			{
+				label: 'ETL Run',
+				src: 'https://res.cloudinary.com/dhohvytuw/image/upload/v1767043057/etl_pipeline_likcz4.png'
+			}
+		]
+	},
 	{
 		slug: 'tiktok',
 		color: '#e35e5e',

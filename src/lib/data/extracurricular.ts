@@ -20,7 +20,7 @@ const items: Array<Highlight> = [
 			}
 		],
 		logo: Assets.ais,
-		name: 'AIS CSULB - Tech Committee',
+		name: 'AIS CSULB - VP of Tech',
 		period: { from: new Date('2025-06-01') },
 		skills: getSkills('tableau', 'python', 'viz'),
 		type: 'Community Project'

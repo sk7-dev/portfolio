@@ -362,6 +362,54 @@ const items = [
 		logo: Assets.Python,
 		name: 'Data Wrangling',
 		category: 'Techniques'
+	}),
+	defineSkill({
+		slug: 'Deep Learning',
+		color: 'pink',
+		description: 'Deep Learning',
+		logo: Assets.Python,
+		name: 'Deep Learning',
+		category: 'Techniques'
+	}),
+	defineSkill({
+		slug: 'Multimodal Learning',
+		color: 'pink',
+		description: 'Multimodal Learning',
+		logo: Assets.Python,
+		name: 'Multimodal Learning',
+		category: 'Techniques'
+	}),
+	defineSkill({
+		slug: 'cnn',
+		color: 'pink',
+		description: 'Convolutional Neural Networks',
+		logo: Assets.Python,
+		name: 'CNN',
+		category: 'Techniques'
+	}),
+	defineSkill({
+		slug: 'mlp',
+		color: 'pink',
+		description: 'Multilayer Perceptron',
+		logo: Assets.Python,
+		name: 'MLP',
+		category: 'Techniques'
+	}),
+	defineSkill({
+		slug: 'PySpark',
+		color: 'pink',
+		description: 'PySpark',
+		logo: Assets.pyspark,
+		name: 'PySpark',
+		category: 'Techniques'
+	}),
+	defineSkill({
+		slug: 'etl',
+		color: 'pink',
+		description: 'ETL/ELT',
+		logo: Assets.data,
+		name: 'ETL/ELT',
+		category: 'Techniques'
 	})
 ] as const;
 

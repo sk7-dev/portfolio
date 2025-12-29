@@ -66,6 +66,11 @@
 		{:else}
 			<EmptyMarkdown />
 		{/if}-->
+		{#if (data.item.description ?? '').trim().length > 0}
+			<Markdown content={data.item.description ?? ''} />
+		{:else}
+			<EmptyMarkdown />
+		{/if}
 		<Separator />
 		<div class="flex flex-col gap-2 px-4 pt-4">
 			{#if data.item.screenshots && data.item.screenshots.length > 0}

@@ -101,7 +101,10 @@ const Assets = {
 	dacert: asset('dacert.png'),
 	db: asset('dbs.png'),
 	eda: asset('eda.png'),
-	syn: asset('syn.webp')
+	syn: asset('syn.webp'),
+	data: asset('data.png'),
+	pyspark: asset('pys.png'),
+	dla: asset('dla.jpg')
 };
 
 export default Assets;
