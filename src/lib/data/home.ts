@@ -34,7 +34,7 @@ const hero: {
 		{ label: 'Email', href: 'mailto:karthee.shiv@gmail.com', icon: 'i-carbon-email' },
 		{
 			label: 'Résumé',
-			href: 'https://docs.google.com/document/d/1al-idMqTvST99e55pQ5mUaPVl8BROG5v/edit?usp=sharing&ouid=101642479519777677187&rtpof=true&sd=true',
+			href: 'https://drive.google.com/file/d/1m0hqA5ka4b6xA1nTMXwRVxfcl2swQJKX/view?usp=sharing',
 			isText: true
 		}
 	]
