@@ -104,7 +104,8 @@ const Assets = {
 	syn: asset('syn.webp'),
 	data: asset('data.png'),
 	pyspark: asset('pys.png'),
-	dla: asset('dla.jpg')
+	dla: asset('dla.jpg'),
+	awsmle: asset('awsmle.png')
 };
 
 export default Assets;

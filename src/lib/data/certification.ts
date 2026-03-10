@@ -4,6 +4,25 @@ import type { Certification } from './types';
 
 const items: Array<Certification> = [
 	{
+		slug: 'aws',
+		color: '#ff3e00',
+		description: '',
+		shortDescription: '',
+		links: [
+			{
+				to: 'https://drive.google.com/file/d/1mgjJ85mbWaNZ5iXbK3i5QTWcP9wxZpe-/view?usp=sharing',
+				label: 'Certificate'
+			}
+		],
+		logo: Assets.awsmle,
+		name: 'AWS Machine Learning Engineer - Associate',
+		period: {
+			from: new Date('2026-02-28')
+		},
+		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
+		type: 'Website Template'
+	},
+	{
 		slug: 'fabric',
 		color: '#ff3e00',
 		description: '',
@@ -15,7 +34,7 @@ const items: Array<Certification> = [
 			}
 		],
 		logo: Assets.FabricCert,
-		name: 'Fabric Analytics Engineer Associate',
+		name: 'Fabric Analytics Engineer - Associate',
 		period: {
 			from: new Date('2025-01-28')
 		},
