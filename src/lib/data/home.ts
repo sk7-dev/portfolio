@@ -18,7 +18,7 @@ const hero: {
 } = {
 	title: `${BaseData.fullName},`,
 	description:
-		"Think of me as a data enthusiast who speaks fluent SQL and Python, but also understands the language of full stack web development. Whether I'm diving into data or crafting efficient web applications, I bring both the 'how' and the 'why' to every project.",
+		'I dreamed of being a detective, then a screenwriter, and somehow found my way into data, where I get to be both. I investigate patterns, connect scattered clues, and turn raw information into stories people can use. What started as curiosity became a career: solving problems, finding meaning in complexity, and letting data tell its story.',
 	links: [
 		{ label: 'GitHub', href: 'https://github.com/sk7-dev', icon: 'i-carbon-logo-github' },
 		{
@@ -34,7 +34,7 @@ const hero: {
 		{ label: 'Email', href: 'mailto:karthee.shiv@gmail.com', icon: 'i-carbon-email' },
 		{
 			label: 'Résumé',
-			href: 'https://drive.google.com/file/d/1m0hqA5ka4b6xA1nTMXwRVxfcl2swQJKX/view?usp=sharing',
+			href: 'https://drive.google.com/file/d/1kx00jx8uFR8Udpuj27tH2aZhJyBX8lC0/view?usp=sharing',
 			isText: true
 		}
 	]
