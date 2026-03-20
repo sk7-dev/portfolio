@@ -410,6 +410,62 @@ const items = [
 		logo: Assets.data,
 		name: 'ETL/ELT',
 		category: 'Techniques'
+	}),
+	defineSkill({
+		slug: 'Spark',
+		color: 'pink',
+		description: 'Spark',
+		logo: Assets.pyspark,
+		name: 'Spark',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'Kafka',
+		color: 'pink',
+		description: 'Kafka',
+		logo: Assets.pyspark,
+		name: 'Kafka',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'Redis',
+		color: 'pink',
+		description: 'Redis',
+		logo: Assets.pyspark,
+		name: 'Redis',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'FastAPI',
+		color: 'pink',
+		description: 'FastAPI',
+		logo: Assets.pyspark,
+		name: 'FastAPI',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'EC2',
+		color: 'pink',
+		description: 'EC2',
+		logo: Assets.pyspark,
+		name: 'EC2',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'S3 bucket',
+		color: 'pink',
+		description: 'S3 bucket',
+		logo: Assets.pyspark,
+		name: 'S3 bucket',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'rf',
+		color: 'pink',
+		description: 'Random Forest',
+		logo: Assets.Python,
+		name: 'Random Forest',
+		category: 'Tools'
 	})
 ] as const;
 

@@ -5,6 +5,27 @@ import type { Project } from './types';
 //'<br><br> <center><b>Highlights</b></center><br><ul><li><b></b></li><br> <li><b></b></li><br> <li><b></b></li></ul>',
 const items: Array<Project> = [
 	{
+		slug: 'awsrec',
+		color: '#ff3e00',
+		description:
+			'Built an end-to-end real-time movie recommendation system that combines offline machine learning with streaming data processing to deliver personalized and continuously updated recommendations. The system leverages collaborative filtering trained on historical watch data, enriched with review ratings, sentiment analysis, and genre-based features to generate high-quality baseline recommendations, which are dynamically updated using Kafka and Spark Structured Streaming based on live user activity. Recommendations are stored in Redis for low-latency access and served via FastAPI with fallback logic to ensure availability, and the solution is deployed on AWS EC2 with S3 integration, designed to scale into a fully cloud-native architecture.<br><br> <center><b>Highlights</b></center><br><ul><li><b></b>Built scalable real-time recommendation system using Kafka, Spark Streaming, Redis, FastAPI; processed 10K+ events/min, sub-100ms latency</li><br><li><b></b>Designed hybrid collaborative filtering model using implicit feedback, review sentiment, genre-aware ranking; improved precision@10 by 25%</li><br><li><b></b>Implemented streaming pipeline with Kafka and Spark Structured Streaming; enabled near real-time recommendation updates within 20–30 seconds</li><br> <li><b></b>Deployed end-to-end system on AWS EC2 with S3 data storage; ensured fault tolerance, reproducibility, and scalable architecture</li></ul>',
+		shortDescription:
+			'A real-time movie recommendation system combining streaming, CF, and low-latency API serving on AWS',
+		links: [
+			{
+				to: 'https://github.com/sk7-dev/Real-time_Hybrid_Recommendation_Engine',
+				label: 'GitHub'
+			}
+		],
+		logo: Assets.AWS,
+		name: 'Real-Time Hybrid Recommendation Engine',
+		period: {
+			from: new Date(2026, 2, 10)
+		},
+		skills: getSkills('py', 'Spark', 'Kafka', 'Redis', 'FastAPI', 'AWS', 'S3 bucket', 'EC2'),
+		type: 'Data Engineering'
+	},
+	{
 		slug: 'multimodal',
 		color: '#ff3e00',
 		description:
@@ -63,6 +84,27 @@ const items: Array<Project> = [
 				src: 'https://res.cloudinary.com/dhohvytuw/image/upload/v1767043057/etl_pipeline_likcz4.png'
 			}
 		]
+	},
+	{
+		slug: 'waze',
+		color: '#ff3e00',
+		description:
+			'This project analyzed Waze’s 14,999-record user dataset to understand churn behavior and build predictive retention models. I performed exploratory data analysis, investigated missing labels and outliers, engineered behavioral features such as kilometers per driving day, sessions in the last month, and professional-driver indicators, and validated assumptions through hypothesis testing. I then built a logistic regression baseline and advanced tree-based models, including Random Forest and XGBoost, to predict churn across train, validation, and test splits. The final analysis showed that user activity patterns and driving intensity were far stronger churn signals than device type, creating a more targeted, data-driven foundation for retention strategy.<br><br> <center><b>Highlights</b></center><br><ul><li><b></b>Analyzed 14,999 user records across 13 variables, identified 700 missing churn labels, and established a baseline class split of 82.3% retained vs 17.7% churned.</li><br><li><b></b>Discovered strong churn behavior signals: median churned users showed 10.0 drives/day vs 4.1 for retained users and 698 km/day vs 290 km/day, while professional drivers had only 7.6% churn vs 19.9% for non-professionals.</li><br><li><b></b>Proved device type was not a statistically significant driver of average trips using a two-sample t-test (t = 1.46, p = 0.143), helping focus the project on behavioral predictors instead of platform assumptions.</li><br> <li><b></b>Built a baseline logistic regression with 82.4% accuracy, then improved churn capture with XGBoost to 18.1% recall at 81.1% accuracy; threshold tuning further increased recall to 49.9% with F1 = 0.369.</li></ul>',
+		shortDescription:
+			'End-to-end churn prediction project for Waze, combining analysis, hypothesis testing, feature engineering, and modeling.',
+		links: [
+			{
+				to: 'https://github.com/sk7-dev/User_Churn_Prediction_and_Retention_Analytics',
+				label: 'GitHub'
+			}
+		],
+		logo: Assets.waze,
+		name: 'Waze User Churn Prediction and Retention Analytics',
+		period: {
+			from: new Date(2025, 7, 10)
+		},
+		skills: getSkills('py', 'pandas', 'sklearn', 'rf', 'xgb'),
+		type: 'Data Science'
 	},
 	{
 		slug: 'tiktok',
