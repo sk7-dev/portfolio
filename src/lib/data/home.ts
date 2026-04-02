@@ -18,7 +18,7 @@ const hero: {
 } = {
 	title: `${BaseData.fullName},`,
 	description:
-		'I dreamed of being a detective, then a screenwriter, and somehow found my way into data, where I get to be both. I investigate patterns, connect scattered clues, and turn raw information into stories people can use. What started as curiosity became a career: solving problems, finding meaning in complexity, and letting data tell its story.',
+		'I dreamed of being a detective, then a screenwriter, and eventually found my way into data, where I get to be both. I investigate patterns, connect scattered clues, and turn raw information into stories people can use. What started as curiosity became a career: solving problems, finding meaning in complexity, and letting data tell its story.',
 	links: [
 		{ label: 'GitHub', href: 'https://github.com/sk7-dev', icon: 'i-carbon-logo-github' },
 		{

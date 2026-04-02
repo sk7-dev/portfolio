@@ -18,13 +18,13 @@ const items: Array<Highlight> = [
 	},
 	{
 		kind: 'volunteering',
-		slug: 'ais-tech-intern',
+		slug: '38th-src',
 		color: '#22c55e',
 		description: '',
 		shortDescription: '',
 		//links: [{ to: 'https://drexel.edu/', label: 'Org' }],
 		logo: Assets.CSULB, // swap to your org badge if you have one
-		name: 'Moderator at 75th Student Research Competition',
+		name: 'Moderator at 38th Annual Student Research Competition',
 		//period: { from: new Date('2025-01-15'), to: new Date('2025-06-15') },
 		skills: getSkills('ts', 'react', 'python'),
 		type: 'Student Organization'
@@ -41,6 +41,19 @@ const items: Array<Highlight> = [
 		//period: { from: new Date('2025-01-15'), to: new Date('2025-06-15') },
 		skills: getSkills('ts', 'react', 'python'),
 		type: 'Tech-Event'
+	},
+	{
+		kind: 'volunteering',
+		slug: '37th-src',
+		color: '#22c55e',
+		description: '',
+		shortDescription: '',
+		//links: [{ to: 'https://drexel.edu/', label: 'Org' }],
+		logo: Assets.CSULB, // swap to your org badge if you have one
+		name: 'Moderator at 37th Annual Student Research Competition',
+		//period: { from: new Date('2025-01-15'), to: new Date('2025-06-15') },
+		skills: getSkills('ts', 'react', 'python'),
+		type: 'Student Organization'
 	}
 ];
 
