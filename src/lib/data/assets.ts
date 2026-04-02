@@ -106,7 +106,8 @@ const Assets = {
 	pyspark: asset('pys.png'),
 	dla: asset('dla.jpg'),
 	awsmle: asset('awsmle.png'),
-	waze: asset('waze.png')
+	waze: asset('waze.png'),
+	isaca: asset('isaca.png')
 };
 
 export default Assets;

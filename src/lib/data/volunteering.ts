@@ -5,6 +5,19 @@ import type { Highlight } from './types';
 const items: Array<Highlight> = [
 	{
 		kind: 'volunteering',
+		slug: 'isaca-spring-2026',
+		color: '#22c55e',
+		description: '',
+		shortDescription: '',
+		//links: [{ to: 'https://drexel.edu/', label: 'Org' }],
+		logo: Assets.isaca, // swap to your org badge if you have one
+		name: 'ISACA Spring 2026 Conference Volunteer',
+		//period: { from: new Date('2025-01-15'), to: new Date('2025-06-15') },
+		skills: getSkills('ts', 'react', 'python'),
+		type: 'Student Organization'
+	},
+	{
+		kind: 'volunteering',
 		slug: 'ais-tech-intern',
 		color: '#22c55e',
 		description: '',
