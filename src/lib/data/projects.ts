@@ -13,12 +13,12 @@ const items: Array<Project> = [
 			'A real-time movie recommendation system combining streaming, CF, and low-latency API serving on AWS',
 		links: [
 			{
-				to: 'https://github.com/sk7-dev/Real-time_Hybrid_Recommendation_Engine',
+				to: 'https://github.com/sk7-dev/Stream-Rec_AI',
 				label: 'GitHub'
 			}
 		],
 		logo: Assets.AWS,
-		name: 'Real-Time Hybrid Recommendation Engine',
+		name: 'Stream-Rec AI',
 		period: {
 			from: new Date(2026, 2, 10)
 		},
