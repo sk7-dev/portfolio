@@ -34,7 +34,7 @@ const items: Array<Project> = [
 			'Evaluating Multimodal AI Models for Automated Pneumonia Diagnosis by combining clinical data and chest X-rays',
 		links: [
 			{
-				to: 'https://github.com/sk7-dev/Multimodal_Analysis_of_Medical_Data',
+				to: 'https://github.com/sk7-dev/Multimodal_Data_Research',
 				label: 'GitHub'
 			},
 			{
@@ -139,7 +139,9 @@ const items: Array<Project> = [
 		description:
 			'This project implements a scalable Business Analytics Pipeline on Microsoft Azure, integrating on-premises SQL Server with cloud-based data processing and visualization. The pipeline automates data ingestion, transformation, and reporting using Azure Data Factory, Databricks, Synapse Analytics, and Power BI. With built-in security through Azure Key Vault and Active Directory, the solution ensures both reliability and compliance while enabling real-time business insights. <br> <br> <center><b>Highlights</b></center><br><ul><li><b>Automated Data Pipeline:</b> Connected on-premises SQL Server to Azure using Data Factory for seamless ingestion and storage in a data lake.</li><br> <li><b>ETL & Analytics:</b> Performed PySpark-based ETL transformations in Databricks and stored refined datasets in Synapse Analytics for advanced querying and reporting.</li><br> <li><b>Secure Visualization:</b> Integrated Power BI dashboards for interactive business analysis, with role-based access and credential management handled via Azure Active Directory and Key Vault.</li></ul>',
 		shortDescription: 'An end-to-end Azure Business Analytics Pipeline',
-		links: [{ to: 'https://github.com', label: 'GitHub' }],
+		links: [
+			{ to: 'https://github.com/sk7-dev/Azure_Business_Analytics_Pipeline', label: 'GitHub' }
+		],
 		logo: Assets.Azure,
 		name: 'Azure Business Analytics Pipeline',
 		period: {
@@ -206,7 +208,7 @@ const items: Array<Project> = [
 		shortDescription: 'A transformer-based language model trained on diverse text corpora.',
 		links: [
 			{
-				to: 'https://github.com/sk7-dev/GPT_Based_Language_Model',
+				to: 'https://github.com/sk7-dev/MagiQuill',
 				label: 'GitHub'
 			},
 			{
