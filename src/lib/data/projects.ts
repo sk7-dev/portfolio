@@ -137,11 +137,11 @@ const items: Array<Project> = [
 		slug: 'azurep1',
 		color: '#ff3e00',
 		description:
-			'This project implements a scalable Sales Data Pipeline on Microsoft Azure, integrating on-premises SQL Server with cloud-based data processing and visualization. The pipeline automates data ingestion, transformation, and reporting using Azure Data Factory, Databricks, Synapse Analytics, and Power BI. With built-in security through Azure Key Vault and Active Directory, the solution ensures both reliability and compliance while enabling real-time business insights. <br> <br> <center><b>Highlights</b></center><br><ul><li><b>Automated Data Pipeline:</b> Connected on-premises SQL Server to Azure using Data Factory for seamless ingestion and storage in a data lake.</li><br> <li><b>ETL & Analytics:</b> Performed PySpark-based ETL transformations in Databricks and stored refined datasets in Synapse Analytics for advanced querying and reporting.</li><br> <li><b>Secure Visualization:</b> Integrated Power BI dashboards for interactive sales analysis, with role-based access and credential management handled via Azure Active Directory and Key Vault.</li></ul>',
-		shortDescription: 'An end-to-end Azure Data Pipeline',
+			'This project implements a scalable Business Analytics Pipeline on Microsoft Azure, integrating on-premises SQL Server with cloud-based data processing and visualization. The pipeline automates data ingestion, transformation, and reporting using Azure Data Factory, Databricks, Synapse Analytics, and Power BI. With built-in security through Azure Key Vault and Active Directory, the solution ensures both reliability and compliance while enabling real-time business insights. <br> <br> <center><b>Highlights</b></center><br><ul><li><b>Automated Data Pipeline:</b> Connected on-premises SQL Server to Azure using Data Factory for seamless ingestion and storage in a data lake.</li><br> <li><b>ETL & Analytics:</b> Performed PySpark-based ETL transformations in Databricks and stored refined datasets in Synapse Analytics for advanced querying and reporting.</li><br> <li><b>Secure Visualization:</b> Integrated Power BI dashboards for interactive business analysis, with role-based access and credential management handled via Azure Active Directory and Key Vault.</li></ul>',
+		shortDescription: 'An end-to-end Azure Business Analytics Pipeline',
 		links: [{ to: 'https://github.com', label: 'GitHub' }],
 		logo: Assets.Azure,
-		name: 'Sales Data Pipeline',
+		name: 'Azure Business Analytics Pipeline',
 		period: {
 			from: new Date(2025, 3, 10)
 		},
