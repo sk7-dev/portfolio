@@ -104,7 +104,7 @@ const items: Array<Project> = [
 			from: new Date(2025, 7, 10)
 		},
 		skills: getSkills('py', 'pandas', 'sklearn', 'rf', 'xgb'),
-		type: 'Data Science'
+		type: 'Data Analysis'
 	},
 	{
 		slug: 'tiktok',
@@ -125,7 +125,7 @@ const items: Array<Project> = [
 			from: new Date(2024, 9, 10)
 		},
 		skills: getSkills('py', 'pandas', 'sklearn', 'nlp', 'xgb'),
-		type: 'Data Science',
+		type: 'Data Analysis',
 		screenshots: [
 			{
 				label: 'Confusion Matrix',
