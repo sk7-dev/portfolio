@@ -107,6 +107,27 @@ const items: Array<Project> = [
 		type: 'Data Analysis'
 	},
 	{
+		slug: 'Goat',
+		color: '#ff3e00',
+		description:
+			'G.O.A.T DB is an Oracle SQL-based sports database management system designed to comprehensively track football data across the 2023–24 season, covering five major competitions including the Premier League, UEFA Champions League, and FA Cup. Built with 15+ relational tables spanning five domains — teams, players, tournaments, matches, and match events — the system automates critical operations through database triggers that compute player ages, determine match winners, and maintain live group standings points. It also provides pre-built analytical views for querying top scorers, team performance, and tournament summaries, and enforces data security through five scoped user roles with granular privileges.<br><br> <center><b>Highlights</b></center><br><ul><li><b></b>Automated triggers handle match result classification (win/draw/penalty), age computation, and real-time group standings updates without manual  intervention.</li><br><li><b></b>Rich sample data seeds 12 English Premier League clubs with real players, staff, venues, and officials across five 2023–24 competitions.</li><br><li><b></b>Role-based security enforces least-privilege access with five distinct Oracle user roles ranging from read-only to full DBA control on the MATCHES table.</li></ul>',
+		shortDescription:
+			'An Oracle SQL football database tracking players, teams, matches, and tournament standings with automated triggers.',
+		links: [
+			{
+				to: 'https://github.com/sk7-dev/G.O.A.T_DB_Database_Design',
+				label: 'GitHub'
+			}
+		],
+		logo: Assets.db,
+		name: 'G.O.A.T DB - Database Design',
+		period: {
+			from: new Date(2025, 7, 10)
+		},
+		skills: getSkills('SQL', 'Data Modelling', 'ERD', 'Oracle', 'Triggers'),
+		type: 'Data Engineering'
+	},
+	{
 		slug: 'tiktok',
 		color: '#e35e5e',
 		description:
