@@ -124,7 +124,7 @@ const items: Array<Project> = [
 		period: {
 			from: new Date(2025, 7, 10)
 		},
-		skills: getSkills('SQL', 'Data Modelling', 'ERD', 'Oracle', 'Triggers'),
+		skills: getSkills('sql', 'dm', 'oracle', 'triggers', 'view'),
 		type: 'Data Engineering'
 	},
 	{

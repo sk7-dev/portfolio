@@ -466,6 +466,38 @@ const items = [
 		logo: Assets.Python,
 		name: 'Random Forest',
 		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'dm',
+		color: 'pink',
+		description: 'Data Modeling',
+		logo: Assets.osql,
+		name: 'Data Modeling',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'oracle',
+		color: 'pink',
+		description: 'Oracle',
+		logo: Assets.osql,
+		name: 'Oracle',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'triggers',
+		color: 'pink',
+		description: 'Oracle Triggers',
+		logo: Assets.osql,
+		name: 'Oracle Triggers',
+		category: 'Tools'
+	}),
+	defineSkill({
+		slug: 'view',
+		color: 'pink',
+		description: 'Oracle Views',
+		logo: Assets.osql,
+		name: 'Oracle Views',
+		category: 'Tools'
 	})
 ] as const;
 
