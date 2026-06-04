@@ -119,7 +119,7 @@ const items: Array<Project> = [
 				label: 'GitHub'
 			}
 		],
-		logo: Assets.db,
+		logo: Assets.osql,
 		name: 'G.O.A.T DB - Database Design',
 		period: {
 			from: new Date(2025, 7, 10)

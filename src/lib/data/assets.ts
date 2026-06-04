@@ -107,7 +107,8 @@ const Assets = {
 	dla: asset('dla.jpg'),
 	awsmle: asset('awsmle.png'),
 	waze: asset('waze.png'),
-	isaca: asset('isaca.png')
+	isaca: asset('isaca.png'),
+	osql: asset('OSQL.png')
 };
 
 export default Assets;
