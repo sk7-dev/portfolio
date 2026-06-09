@@ -17,7 +17,7 @@
 </script>
 
 <FancyCard color={item.color} class="flex h-full flex-col">
-	<CardHeader class="flex min-h-[120px] flex-row items-center gap-4 p-4 sm:gap-6">
+	<CardHeader class="flex flex-1 flex-row items-center gap-4 p-4 sm:gap-6">
 		<div class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden">
 			<img
 				src={$mode === 'dark' ? item.logo.dark : item.logo.light}
@@ -34,14 +34,6 @@
 				{item.name}
 			</CardTitle>
 
-			<div class="flex items-center gap-2 text-xs opacity-80">
-				<Icon icon="i-carbon-information" className="h-4 w-4" />
-				<span class="capitalize">{item.kind}</span>
-			</div>
-
-			<!--<div class="flex items-center gap-2 text-xs">
-				<Icon icon="i-carbon-time" className="h-4 w-4" />
-				<span>Period: {from} - {to}</span>-->
 			{#if item.period?.from}
 				<div class="flex items-center gap-2 text-xs">
 					<Icon icon="i-carbon-time" className="h-4 w-4" />
@@ -51,10 +43,9 @@
 		</div>
 	</CardHeader>
 
-	<Separator />
-
-	<CardContent class="mt-auto p-4 pt-3">
-		{#if item.links?.length}
+	{#if item.links?.length}
+		<Separator />
+		<CardContent class="p-4 pt-3">
 			<div class="flex flex-wrap gap-2">
 				{#each item.links as link (link.to)}
 					<a href={link.to} target="_blank" rel="noopener noreferrer">
@@ -62,6 +53,6 @@
 					</a>
 				{/each}
 			</div>
-		{/if}
-	</CardContent>
+		</CardContent>
+	{/if}
 </FancyCard>
