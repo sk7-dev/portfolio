@@ -21,7 +21,7 @@ const items: Array<Highlight> = [
 		],
 		logo: Assets.ais,
 		name: 'AIS CSULB - VP of Tech',
-		period: { from: new Date('2025-06-01') },
+		period: { from: new Date('2025-06-01'), to: new Date('2026-05-18') },
 		skills: getSkills('tableau', 'python', 'viz'),
 		type: 'Community Project'
 	},
