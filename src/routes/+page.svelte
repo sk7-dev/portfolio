@@ -31,13 +31,13 @@
 <Title title={HomeData.title} />
 <ResponsiveContainer className="flex flex-col justify-center flex-1">
 	<div
-		class="flex flex-1 flex-col items-center justify-center gap-8 px-14 md:flex-row md:justify-between"
+		class="flex flex-1 flex-col items-center justify-center gap-8 px-6 sm:px-10 md:flex-row md:justify-between md:px-14"
 	>
 		<div
 			class="flex flex-col items-center justify-center gap-4 text-center md:items-start md:text-left"
 		>
 			<H1>{HomeData.hero.title}</H1>
-			<Muted>{HomeData.hero.description}</Muted>
+			<Muted className="max-w-md leading-relaxed">{HomeData.hero.description}</Muted>
 			<div class="flex flex-row gap-1">
 				{#each HomeData.hero.links as item}
 					{#if item.icon}

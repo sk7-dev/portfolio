@@ -21,14 +21,14 @@
 </script>
 
 <SearchPage title={HighlightsData.title} {onSearch}>
-	<div class="flex flex-1 flex-col gap-8">
+	<div class="flex flex-1 flex-col gap-5">
 		{#if result.length === 0}
 			<EmptyResult />
 		{:else}
 			{#if activities.length}
-				<h2 class="px-1 text-2xl font-semibold">EXTRA-CURRICULAR ACTIVITIES</h2>
+				<h2 class="px-1 text-xl font-semibold tracking-tight text-foreground/80">Extra-Curricular Activities</h2>
 				<div
-					class="grid grid-cols-1 items-stretch gap-4 [grid-auto-rows:minmax(0,1fr)] md:grid-cols-2 lg:grid-cols-3"
+					class="grid grid-cols-1 items-stretch gap-5 sm:gap-6 [grid-auto-rows:minmax(0,1fr)] md:grid-cols-2 lg:grid-cols-3"
 				>
 					{#each activities as it (it.slug)}
 						<div class="h-full"><HighlightCard item={it} /></div>
@@ -37,9 +37,9 @@
 			{/if}
 
 			{#if certifications.length}
-				<h2 class="mt-6 px-1 text-2xl font-semibold">CERTIFICATIONS</h2>
+				<h2 class="mt-4 px-1 text-xl font-semibold tracking-tight text-foreground/80">Certifications</h2>
 				<div
-					class="grid grid-cols-1 items-stretch gap-4 [grid-auto-rows:minmax(0,1fr)] md:grid-cols-2 lg:grid-cols-3"
+					class="grid grid-cols-1 items-stretch gap-5 sm:gap-6 [grid-auto-rows:minmax(0,1fr)] md:grid-cols-2 lg:grid-cols-3"
 				>
 					{#each certifications as it (it.slug)}
 						<div class="h-full"><HighlightCard item={it} /></div>
@@ -48,9 +48,9 @@
 			{/if}
 
 			{#if volunteering.length}
-				<h2 class="mt-6 px-1 text-2xl font-semibold">VOLUNTEERING</h2>
+				<h2 class="mt-4 px-1 text-xl font-semibold tracking-tight text-foreground/80">Volunteering</h2>
 				<div
-					class="grid grid-cols-1 items-stretch gap-4 [grid-auto-rows:minmax(0,1fr)] md:grid-cols-2 lg:grid-cols-3"
+					class="grid grid-cols-1 items-stretch gap-5 sm:gap-6 [grid-auto-rows:minmax(0,1fr)] md:grid-cols-2 lg:grid-cols-3"
 				>
 					{#each volunteering as it (it.slug)}
 						<div class="h-full"><HighlightCard item={it} /></div>

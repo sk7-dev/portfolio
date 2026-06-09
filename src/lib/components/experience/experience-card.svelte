@@ -31,7 +31,7 @@
 </script>
 
 <FancyCard color={it.color} href={href(`/experience/${it.slug}`)}>
-	<CardContent class="flex flex-col gap-8 sm:flex-row">
+	<CardContent class="flex flex-col gap-6 p-5 sm:flex-row sm:p-6">
 		<Avatar>
 			<AvatarFallback>
 				<img src={Assets.Unknown.light} alt={it.name} />

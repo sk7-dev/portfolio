@@ -14,7 +14,7 @@
 <div class="flex min-h-[100svh] w-full flex-col overflow-x-hidden">
 	<NavBar />
 	<!-- match the mobile/desktop navbar heights -->
-	<div class="mt-14 flex flex-1 flex-col sm:mt-[70px]">
+	<div class="mt-[72px] flex flex-1 flex-col sm:mt-[70px]">
 		{@render children()}
 	</div>
 </div>

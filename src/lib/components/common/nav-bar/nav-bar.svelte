@@ -22,15 +22,15 @@
 <!-- Compact on mobile; desktop unchanged -->
 <div
 	class="fixed left-2 right-2 top-2 z-10 flex
-         h-12 items-center rounded-lg border bg-[--bg]
+         h-16 items-center rounded-lg border bg-[--bg]
          px-3 shadow-md backdrop-blur-xl
          sm:left-8 sm:right-8 sm:top-4 sm:h-[70px] sm:px-8"
 	style="--bg: hsl(var(--background) / 0.9)"
 >
 	<!-- Brand  -->
 	<div class="flex-none md:flex-1">
-		<a href={href('/')} class="flex items-center text-lg sm:text-2xl">
-			<Icon icon={NavBarData.left.icon} className="text-lg sm:text-3xl" />
+		<a href={href('/')} class="flex items-center text-xl sm:text-2xl">
+			<Icon icon={NavBarData.left.icon} className="text-xl sm:text-3xl" />
 			<H4 className="hidden md:ml-3 md:block md:text-2xl">
 				{NavBarData.left.title}
 			</H4>
@@ -66,9 +66,9 @@
 		<nav class="flex items-center justify-center gap-3 sm:gap-3">
 			{#each NavBarData.primaryItems as item}
 				<a href={href(item.href)}>
-					<Button size="sm" variant="ghost" class="h-8 min-w-0 px-1.5 py-0 sm:h-8 sm:px-2">
+					<Button size="sm" variant="ghost" class="h-10 min-w-0 px-2 py-0 sm:h-8 sm:px-2">
 						<span
-							class="whitespace-nowrap text-[clamp(12px,3.6vw,16px)] leading-tight tracking-tight sm:text-base"
+							class="whitespace-nowrap text-[clamp(13px,3.8vw,16px)] leading-tight tracking-tight sm:text-base"
 						>
 							{item.title}
 						</span>
@@ -84,8 +84,8 @@
 			<Tooltip>
 				<TooltipTrigger>
 					<DialogTrigger>
-						<Button size="sm" variant="ghost" class="h-8 min-w-0 px-2 py-0">
-							<Icon icon="i-carbon-menu" className="text-lg" />
+						<Button size="sm" variant="ghost" class="h-10 min-w-0 px-2 py-0">
+							<Icon icon="i-carbon-menu" className="text-xl" />
 						</Button>
 					</DialogTrigger>
 				</TooltipTrigger>

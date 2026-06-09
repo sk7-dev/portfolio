@@ -93,7 +93,7 @@
 					<a
 						href={link.to}
 						target="_blank"
-						class="inline-flex items-center gap-2 rounded-md border border-gray-500 px-3 py-1 hover:bg-gray-700"
+						class="inline-flex items-center gap-2 rounded-md border border-border px-3 py-1.5 text-sm text-foreground/70 transition-colors hover:border-foreground/30 hover:bg-accent hover:text-foreground"
 					>
 						<Icon icon={getIcon(link.label)} />
 						<!--<span>{link.label}</span>-->

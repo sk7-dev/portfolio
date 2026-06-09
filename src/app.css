@@ -38,22 +38,22 @@ body {
 	.dark {
 		--background: 0 0% 0%;
 		--foreground: 243 0% 90%;
-		--card: 243 0% 0%;
+		--card: 240 4% 7%;
 		--card-foreground: 243 0% 90%;
-		--popover: 243 10% 5%;
+		--popover: 243 10% 7%;
 		--popover-foreground: 243 0% 90%;
 		--primary: 243 0% 100%;
 		--primary-foreground: 0 0% 0%;
-		--secondary: 243 10% 10%;
+		--secondary: 243 10% 12%;
 		--secondary-foreground: 0 0% 100%;
-		--muted: 205 10% 15%;
-		--muted-foreground: 243 0% 60%;
-		--accent: 205 10% 15%;
+		--muted: 205 8% 14%;
+		--muted-foreground: 243 0% 55%;
+		--accent: 205 8% 14%;
 		--accent-foreground: 243 0% 90%;
 		--destructive: 0 50% 30%;
 		--destructive-foreground: 243 0% 90%;
-		--border: 250 2% 25%;
-		--input: 250 2% 25%;
+		--border: 250 3% 20%;
+		--input: 250 3% 20%;
 		--ring: 243 0% 100%;
 		--radius: 0.5rem;
 	}

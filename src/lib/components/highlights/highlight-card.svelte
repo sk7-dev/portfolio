@@ -17,7 +17,7 @@
 </script>
 
 <FancyCard color={item.color} class="flex h-full flex-col">
-	<CardHeader class="flex h-[148px] flex-row items-center gap-6 overflow-hidden p-4">
+	<CardHeader class="flex min-h-[120px] flex-row items-center gap-4 p-4 sm:gap-6">
 		<div class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden">
 			<img
 				src={$mode === 'dark' ? item.logo.dark : item.logo.light}

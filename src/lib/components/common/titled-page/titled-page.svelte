@@ -6,8 +6,8 @@
 </script>
 
 <BasePage {title}>
-	<H1 className="text-center py-16">{title}</H1>
-	<div class="flex flex-1 flex-col gap-5 px-4">
+	<H1 className="text-center py-8 sm:py-10">{title}</H1>
+	<div class="flex flex-1 flex-col gap-6 px-4 sm:px-6">
 		<slot />
 	</div>
 </BasePage>

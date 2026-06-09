@@ -78,7 +78,7 @@
 		{#if result.length === 0}
 			<EmptyResult />
 		{:else}
-			<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+			<div class="grid grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
 				{#each result as it (it.slug)}
 					<ProjectCard project={it} />
 				{/each}
