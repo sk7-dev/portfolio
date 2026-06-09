@@ -14,7 +14,7 @@ const items: Array<Experience> = [
 		type: 'Data Analyst',
 		location: 'Long Beach, California',
 		period: {
-			from: new Date(2025, 6, 1),
+			from: new Date(2025, 5, 1),
 			to: new Date(2026, 4, 18)
 		},
 		skills: getSkills('Python', 'Machine Learning'),
