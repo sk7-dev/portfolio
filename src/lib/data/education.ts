@@ -11,7 +11,7 @@ const items: Array<Education> = [
 		logo: Assets.CSULB,
 		name: '',
 		organization: 'CSULB',
-		period: { from: new Date(2024, 7, 15) },
+		period: { from: new Date(2024, 7, 15), to: new Date(2026, 4, 18) },
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
 		subjects: ['Data Science', 'Machine Learning', 'Statistics', 'Data Analysis', 'Deep Learning']
