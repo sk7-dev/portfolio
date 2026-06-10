@@ -31,12 +31,8 @@ const hero: {
 			href: 'https://public.tableau.com/app/profile/shiv.karthee.janardhanan/vizzes',
 			icon: 'i-carbon-analytics'
 		},
-		{ label: 'Email', href: 'mailto:karthee.shiv@gmail.com', icon: 'i-carbon-email' },
-		{
-			label: 'Résumé',
-			href: 'https://drive.google.com/file/d/1WVio-OV20Pw0iED2eKjH0G5QuK8okeTf/view?usp=sharing',
-			isText: true
-		}
+		{ label: 'Email', href: 'mailto:karthee.shiv@gmail.com', icon: 'i-carbon-email' }
+		//{label: 'Résumé',href: 'https://drive.google.com/file/d/1WVio-OV20Pw0iED2eKjH0G5QuK8okeTf/view?usp=sharing',isText: true}
 	]
 };
 
